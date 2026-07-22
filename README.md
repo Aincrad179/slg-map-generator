@@ -1,4 +1,4 @@
-# 烽火连城 地图随机生成器 · 使用说明
+# SLG 地图随机生成器 · 使用说明
 
 给策划用的地图生成工具。**填种子 → 生成 → 用 Tiled 微调 → 导出给程序。** 不需要懂编程。
 
@@ -145,7 +145,7 @@ mapgen/
 ├── DESIGN.md            设计与决策文档（改算法前必读）
 ├── design/              固定格子设计（graph 拓扑，供 gen_graph.py / graph_editor.pyw）
 ├── recipes/
-│   ├── fhlc.json        烽火连城预设（策划改地图设计在这里）
+│   ├── fhlc.json        默认示例配方（策划改地图设计在这里）
 │   ├── demo4.json       示例四阵营配方
 │   ├── mirror2.json     示例镜像 1v1 配方（topology:mirror）
 │   └── multiroute3.json 示例多路线配方（topology:multi_route，双车道）
