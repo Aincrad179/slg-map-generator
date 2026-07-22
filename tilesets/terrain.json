@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "name": "terrain",
+  "tile_w": 205,
+  "tile_h": 84,
+  "orientation": "isometric",
+  "image": {
+    "type": "collection",
+    "dir": "../assets/terrain",
+    "pattern": "{id:03d}.png",
+    "id_base": 1
+  },
+  "wangset": {
+    "name": "道路",
+    "type": "corner",
+    "colors": [
+      { "name": "草地", "color": "#5fa832" },
+      { "name": "土路", "color": "#c8a064" }
+    ]
+  },
+  "terrain": {
+    "ground": { "ids": [[1, 1]], "wangid": "0,1,0,1,0,1,0,1" },
+    "road":   { "ids": [[2, 2]], "wangid": "0,2,0,2,0,2,0,2" },
+    "transition": {
+      "3": "0,2,0,2,0,1,0,2",
+      "4": "0,2,0,1,0,2,0,2",
+      "5": "0,2,0,2,0,2,0,1",
+      "6": "0,1,0,2,0,2,0,1",
+      "7": "0,2,0,1,0,1,0,2",
+      "8": "0,1,0,2,0,2,0,2"
+    }
+  },
+  "obstacle": { "ids": [] },
+  "decoration": { "ids": [] }
+}

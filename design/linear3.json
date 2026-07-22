@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "recipe": "recipes/fhlc.json",
+  "_comment": "3阵营线性链示例。对应 地图设计思路.md：中心城 -8- 大城 -12- 小城 -20- 关城 -30- 出生城。三条链对称 → 各出生城到中心距离相等(=70)。",
+  "nodes": [
+    { "id": "C", "type": "中心城", "root": true },
+
+    { "id": "B1", "type": "大城" },
+    { "id": "S1", "type": "小城" },
+    { "id": "G1", "type": "关城" },
+    { "id": "P1", "type": "出生城", "faction": 1 },
+
+    { "id": "B2", "type": "大城" },
+    { "id": "S2", "type": "小城" },
+    { "id": "G2", "type": "关城" },
+    { "id": "P2", "type": "出生城", "faction": 2 },
+
+    { "id": "B3", "type": "大城" },
+    { "id": "S3", "type": "小城" },
+    { "id": "G3", "type": "关城" },
+    { "id": "P3", "type": "出生城", "faction": 3 }
+  ],
+  "edges": [
+    { "a": "C",  "b": "B1", "length": 8 },
+    { "a": "B1", "b": "S1", "length": 12 },
+    { "a": "S1", "b": "G1", "length": 20 },
+    { "a": "G1", "b": "P1", "length": 30 },
+
+    { "a": "C",  "b": "B2", "length": 8 },
+    { "a": "B2", "b": "S2", "length": 12 },
+    { "a": "S2", "b": "G2", "length": 20 },
+    { "a": "G2", "b": "P2", "length": 30 },
+
+    { "a": "C",  "b": "B3", "length": 8 },
+    { "a": "B3", "b": "S3", "length": 12 },
+    { "a": "S3", "b": "G3", "length": 20 },
+    { "a": "G3", "b": "P3", "length": 30 }
+  ]
+}

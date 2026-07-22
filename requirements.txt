@@ -1,0 +1,3 @@
+# SLG 地图生成器依赖
+# 安装：pip install -r requirements.txt
+pillow>=9

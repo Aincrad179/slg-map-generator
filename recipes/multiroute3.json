@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "name": "多路线(双车道)",
+  "factions": 3,
+  "seed": 20260707,
+  "topology": "multi_route",
+  "tileset": "tilesets/terrain.json",
+  "layout": {
+    "ring_gap": 6,
+    "spawn_margin": 4,
+    "road_width": 2,
+    "road_style": "smooth",
+    "cross_links": false,
+    "random_layout": true,
+    "edge_margin": 6,
+    "max_bends": 3,
+    "mirror": true
+  },
+  "rings": [
+    { "type": "大城", "count": 2 },
+    { "type": "小城", "count": 3 },
+    { "type": "关城", "count": 3 }
+  ],
+  "roles": { "center": "中心城", "gate": "关城", "spawn": "出生城" },
+  "city_types": {
+    "中心城": { "size": [4, 4], "gate_count": 4, "color": [255, 205, 0] },
+    "大城":   { "size": [3, 3], "gate_count": 3, "color": [205, 90, 200] },
+    "小城":   { "size": [2, 2], "gate_count": 2, "color": [70, 150, 210] },
+    "关城":   { "size": [1, 2], "gate_count": 1, "color": [150, 150, 150] },
+    "出生城": { "size": [2, 2], "gate_count": 0, "color": [70, 190, 90] }
+  }
+}

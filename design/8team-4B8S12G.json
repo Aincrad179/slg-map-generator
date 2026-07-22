@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "recipe": "recipes/fhlc.json",
+  "_comment": "8阵营 / 4大城 / 8小城 / 12关城 / 8出生城。对称辐射树：中心-关-大-小-关-出生。每出生城途经 关×2 小×1 大×1，各方到中心等距=70。关城GB为2个小城共享的关卡(在中心-大城主干上)。",
+  "nodes": [
+    { "id": "C", "type": "中心城", "root": true },
+
+    { "id": "GB1", "type": "关城" }, { "id": "B1", "type": "大城" },
+    { "id": "GB2", "type": "关城" }, { "id": "B2", "type": "大城" },
+    { "id": "GB3", "type": "关城" }, { "id": "B3", "type": "大城" },
+    { "id": "GB4", "type": "关城" }, { "id": "B4", "type": "大城" },
+
+    { "id": "S1", "type": "小城" }, { "id": "GS1", "type": "关城" }, { "id": "P1", "type": "出生城", "faction": 1 },
+    { "id": "S2", "type": "小城" }, { "id": "GS2", "type": "关城" }, { "id": "P2", "type": "出生城", "faction": 2 },
+    { "id": "S3", "type": "小城" }, { "id": "GS3", "type": "关城" }, { "id": "P3", "type": "出生城", "faction": 3 },
+    { "id": "S4", "type": "小城" }, { "id": "GS4", "type": "关城" }, { "id": "P4", "type": "出生城", "faction": 4 },
+    { "id": "S5", "type": "小城" }, { "id": "GS5", "type": "关城" }, { "id": "P5", "type": "出生城", "faction": 5 },
+    { "id": "S6", "type": "小城" }, { "id": "GS6", "type": "关城" }, { "id": "P6", "type": "出生城", "faction": 6 },
+    { "id": "S7", "type": "小城" }, { "id": "GS7", "type": "关城" }, { "id": "P7", "type": "出生城", "faction": 7 },
+    { "id": "S8", "type": "小城" }, { "id": "GS8", "type": "关城" }, { "id": "P8", "type": "出生城", "faction": 8 }
+  ],
+  "edges": [
+    { "a": "C", "b": "GB1", "length": 4 }, { "a": "GB1", "b": "B1", "length": 4 },
+    { "a": "C", "b": "GB2", "length": 4 }, { "a": "GB2", "b": "B2", "length": 4 },
+    { "a": "C", "b": "GB3", "length": 4 }, { "a": "GB3", "b": "B3", "length": 4 },
+    { "a": "C", "b": "GB4", "length": 4 }, { "a": "GB4", "b": "B4", "length": 4 },
+
+    { "a": "B1", "b": "S1", "length": 12 }, { "a": "B1", "b": "S2", "length": 12 },
+    { "a": "B2", "b": "S3", "length": 12 }, { "a": "B2", "b": "S4", "length": 12 },
+    { "a": "B3", "b": "S5", "length": 12 }, { "a": "B3", "b": "S6", "length": 12 },
+    { "a": "B4", "b": "S7", "length": 12 }, { "a": "B4", "b": "S8", "length": 12 },
+
+    { "a": "S1", "b": "GS1", "length": 20 }, { "a": "GS1", "b": "P1", "length": 30 },
+    { "a": "S2", "b": "GS2", "length": 20 }, { "a": "GS2", "b": "P2", "length": 30 },
+    { "a": "S3", "b": "GS3", "length": 20 }, { "a": "GS3", "b": "P3", "length": 30 },
+    { "a": "S4", "b": "GS4", "length": 20 }, { "a": "GS4", "b": "P4", "length": 30 },
+    { "a": "S5", "b": "GS5", "length": 20 }, { "a": "GS5", "b": "P5", "length": 30 },
+    { "a": "S6", "b": "GS6", "length": 20 }, { "a": "GS6", "b": "P6", "length": 30 },
+    { "a": "S7", "b": "GS7", "length": 20 }, { "a": "GS7", "b": "P7", "length": 30 },
+    { "a": "S8", "b": "GS8", "length": 20 }, { "a": "GS8", "b": "P8", "length": 30 }
+  ]
+}

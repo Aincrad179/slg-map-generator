@@ -1,0 +1,16 @@
+{
+  "recipe": "recipes/fhlc.json",
+  "nodes": [
+    {"id":"C","type":"中心城","x":400,"y":320,"root":true},
+    {"id":"S1","type":"小城","x":600,"y":320,"angle":0},
+    {"id":"P1","type":"出生城","faction":1,"x":760,"y":320,"angle":0},
+    {"id":"S2","type":"小城","x":200,"y":320,"angle":180},
+    {"id":"P2","type":"出生城","faction":2,"x":40,"y":320,"angle":180}
+  ],
+  "edges": [
+    {"a":"C","b":"S1","length":10},
+    {"a":"S1","b":"P1","length":20},
+    {"a":"C","b":"S2","length":10},
+    {"a":"S2","b":"P2","length":20}
+  ]
+}

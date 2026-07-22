@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.2" orientation="isometric" renderorder="right-down" width="30" height="30" tilewidth="205" tileheight="84" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="../tilesets/markers.tsx"/>
+ <tileset firstgid="6" source="../tilesets/terrain.tsx"/>
+ <layer id="1" name="图块层 1" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlssKACEIRZtX/v8ft1EQocBHQ860OKsL3rppVUspdbMUD6LVsvoCotW83IhWi9zvyZi93wsB4QtMy+RLPQl4VqN6kblG+PJMqIZlxnr1Z/rKniUOQXT+sncI6cu13loz+PZyG+Vs8Y3oZ8v5rjRH2vmK9v3a3azJ9c03cIU3X6N5+dtfcuOjAfz1E+E=
+  </data>
+ </layer>
+</map>
